@@ -1,0 +1,58 @@
+/* Case Study
+======================================================*/
+.section-item {
+    &:nth-child(even) {
+        @extend .bg-light;
+    }
+
+    &:nth-child(2n - 1) {
+        .row {
+            @extend .flex-lg-row-reverse;
+        }
+    }
+
+    ul {
+        margin: 0 clamp(-30px, -1.5vw, -20px);
+
+        li {
+            padding: 0 clamp(20px, 1.5vw, 30px);
+
+            &:not(:last-child) {
+                border-right: 1px solid var(--bs-border-color);
+            }
+        }
+    }
+
+    .shape-1 {
+        width: 20.15625vw;
+        min-width: 20.15625vw;
+        height: 13.90625vw;
+
+        @extend .text-white, .position-absolute, .top-0, .start-0, .z-1;
+    }
+
+    .shape-2 {
+        width: 20.15625vw;
+        min-width: 20.15625vw;
+        height: 21.197916vw;
+
+        @extend .text-white, .position-absolute, .top-0, .end-0, .z-1;
+    }
+
+    .shape-3 {
+        width: 21.770833vw;
+        min-width: 21.770833vw;
+        height: 9.114583vw;
+
+        @extend .text-white, .position-absolute, .bottom-0, .start-0, .z-1;
+    }
+
+    @include responsive(lg) {
+
+        .shape-1,
+        .shape-2,
+        .shape-3 {
+            display: none;
+        }
+    }
+}

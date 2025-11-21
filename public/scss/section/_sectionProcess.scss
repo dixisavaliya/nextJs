@@ -1,0 +1,13 @@
+.section-process {
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(var(--bs-dark-rgb), 0.9) url("/images/about/pattern.png") no-repeat center center/cover;
+
+        @include prefix(backdrop-filter, blur(40px));
+    }
+}

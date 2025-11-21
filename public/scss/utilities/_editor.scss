@@ -1,0 +1,42 @@
+.text-editor {
+    h2 {
+        @extend .h4, .text-primary, .fw-semibold, .mb-lg-7, .mb-4;
+    }
+
+    h3 {
+        @extend .h6, .fw-semibold, .mb-lg-6, .mb-4;
+    }
+
+    p {
+        @extend .fw-medium;
+    }
+}
+
+.content-editor {
+
+    h1,
+    h2 {
+        @extend .h3, .my-lg-10, .my-5, .h4-md;
+
+        span {
+            @extend .text-primary;
+        }
+    }
+
+    h4 {
+        @extend .fw-medium, .my-lg-10, .my-5, .h5-md;
+    }
+
+    p {
+        @extend .fw-medium;
+    }
+
+    ul {
+        margin: 0 0 var(--bs-body-lh);
+        padding-left: 16px;
+
+        li {
+            list-style-type: disc;
+        }
+    }
+}

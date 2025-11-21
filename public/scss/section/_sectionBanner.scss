@@ -1,0 +1,37 @@
+.section-banner {
+    min-height: clamp(280px, 26.04166666666667vw, 500px);
+    margin-top: clamp(91px, 7.135416666vw, 137px);
+
+    @include responsive(lg) {
+        margin-top: 96px;
+    }
+
+
+    figure {
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(var(--bs-primary-rgb), 0.5);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: clamp(20px, 3.125vw, 60px);
+            z-index: 1;
+        }
+    }
+
+    h6 {
+        max-width: 790px;
+    }
+
+    &.section-banner-lg {
+        min-height: clamp(140px, 40.36458vw, 775px);
+
+        figure {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.section-expert {
+    .title {
+        max-width: 1180px;
+    }
+
+    .shape-1,
+    .shape-2,
+    .shape-3 {
+        width: clamp(100px, 30.677083vw, 589px);
+        min-width: clamp(100px, 30.677083vw, 589px);
+        position: absolute;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .shape-1 {
+        height: clamp(100px, 30.677083vw, 589px);
+        left: 0;
+        top: 55px;
+    }
+
+    .shape-2 {
+        height: clamp(100px, 30.677083vw, 589px);
+        right: 26px;
+        top: clamp(100px, 10.15625vw, 195px);
+    }
+
+    .shape-3 {
+        left: clamp(30px, 5.208333vw, 100px);
+        bottom: 0;
+    }
+
+    figure {
+        max-width: 1200px;
+    }
+}

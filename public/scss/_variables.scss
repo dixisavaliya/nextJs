@@ -1,0 +1,207 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1480px,
+  ) !default;
+
+:root {
+  --bs-font: "Manrope",
+    sans-serif;
+  --bs-font-heading: "Manrope",
+    sans-serif;
+  --bs-font-italic: "Manrope",
+    sans-serif;
+
+  --bs-body-fs: clamp(16px, 0.9375vw, 18px
+  );
+--bs-body-lh: clamp(24px, 1.458333333333333vw, 28px);
+--bs-body-fw: 400;
+
+--bs-small-font-size: clamp(14px, 0.8333333333333333vw, 16px);
+--bs-small-line-height: clamp(20px, 1.25vw, 24px);
+
+--bs-text-sm: clamp(14px, 0.7291666666666667vw, 14px);
+--bs-text-sm-lh: clamp(20px, 1.041666666666667vw, 20px);
+--bs-text-sm-fw: 400;
+
+--bs-font-size-h1: clamp(42px, 3.75vw, 72px);
+--bs-line-height-h1: clamp(54px, 5vw, 96px);
+--bs-font-weight-h1: 700;
+--bs-font-size-h2: clamp(36px, 2.5vw, 48px);
+--bs-line-height-h2: clamp(48px, 3.125vw, 60px);
+--bs-font-weight-h2: 700;
+--bs-font-size-h3: clamp(30px, 2.1875vw, 42px);
+--bs-line-height-h3: clamp(42px, 2.8125vw, 54px);
+--bs-font-weight-h3: 700;
+--bs-font-size-h4: clamp(24px, 1.5625vw, 30px);
+--bs-line-height-h4: clamp(32px, 2.1875vw, 42px);
+--bs-font-weight-h4: 700;
+--bs-font-size-h5: clamp(18px, 1.25vw, 24px);
+--bs-line-height-h5: clamp(28px, 1.666666666666667vw, 32px);
+--bs-font-weight-h5: 700;
+--bs-font-size-h6: clamp(18px, 1.041666666666667vw, 20px);
+--bs-line-height-h6: clamp(28px, 1.5625vw, 30px);
+--bs-font-weight-h6: 700;
+
+--bs-radius-xl: clamp(30px, 3.125vw, 60px);
+--bs-radius-lg: clamp(20px, 2.083333333333333vw, 40px);
+--bs-radius-md: clamp(15px, 1.5625vw, 30px);
+--bs-radius-sm: clamp(12px, 1.25vw, 24px);
+--bs-radius-xs: clamp(8px, 0.8333333333333333vw, 16px);
+--bs-radius: clamp(6px, 0.625vw, 12px);
+
+--bs-font-thin: 100;
+--bs-font-extra-light: 200;
+--bs-font-light: 300;
+--bs-font-regular: 400;
+--bs-font-medium: 500;
+--bs-font-semi-bold: 600;
+--bs-font-bold: 700;
+--bs-font-extra-bold: 800;
+--bs-font-black: 900;
+
+--bs-primary-50: #e9ecf3;
+--bs-primary-100: #bac3d9;
+--bs-primary-500: #1f3d83;
+
+--bs-dark-500: #06283d;
+
+--transition: all 0.4s ease-in-out 0s;
+
+--bs-spacer: 0.2083333333333333vw;
+}
+
+@include responsive(xl) {
+  body {}
+}
+
+@include responsive(lg) {
+  body {
+    --bs-spacer: 4px;
+  }
+}
+
+@include responsive(md) {
+  body {}
+}
+
+$spacer: var(--bs-spacer) !default;
+$spacers: (
+  0: 0,
+  1: calc($spacer * 1),
+  2: calc($spacer * 2),
+  3: calc($spacer * 3),
+  4: calc($spacer * 4),
+  5: calc($spacer * 5),
+  6: calc($spacer * 6),
+  7: calc($spacer * 7),
+  8: calc($spacer * 8),
+  9: calc($spacer * 9),
+  10: calc($spacer * 10),
+  11: calc($spacer * 11),
+  12: calc($spacer * 12),
+  13: calc($spacer * 13),
+  14: calc($spacer * 14),
+  15: calc($spacer * 15),
+  20: calc($spacer * 20),
+  25: calc($spacer * 25),
+  ) !default;
+
+$primary: #1f3d83 !default;
+$secondary: #2787ad !default;
+$success: #01ad54 !default;
+$danger: #ff0000 !default;
+$warning: #ED8535 !default;
+$info: #2d9cdb !default;
+$light: #eff4fb !default;
+$dark: #03111a !default;
+$white: #ffffff !default;
+$black: #000000 !default;
+
+$body-bg: #fdfdff !default;
+$body-color: #385364 !default;
+$border-color: #e3e3e3 !default;
+
+$headings-margin-bottom: calc($spacer * 0.5) !default;
+$navbar-padding-y: calc($spacer * 0.5) !default;
+$dropdown-divider-margin-y: calc($spacer * 0.5) !default;
+$dropdown-item-padding-y: calc($spacer * 0.25) !default;
+$card-title-spacer-y: calc($spacer * 0.5) !default;
+$card-spacer-y: $spacer !default;
+$card-cap-padding-y: calc($card-spacer-y * 0.5) !default;
+$tooltip-padding-y: calc($spacer * 0.25) !default;
+$tooltip-padding-x: calc($spacer * 0.5) !default;
+$alert-padding-x: $spacer !default;
+$alert-dismissible-padding-r: calc($alert-padding-x * 3) !default;
+$list-group-item-padding-y: calc($spacer * 0.5) !default;
+
+$alert-padding-y: 1rem;
+
+$btn-padding-y: 0.9895833333333333vw !default;
+$btn-padding-x: 1.875vw !default;
+$btn-font-family: var(--bs-font) !default;
+$btn-font-size: var(--bs-body-fs) !default;
+$btn-line-height: var(--bs-body-lh) !default;
+
+$btn-padding-y-sm: 0.78125vw !default;
+$btn-padding-x-sm: 1.875vw !default;
+$btn-font-size-sm: var(--bs-small-font-size) !default;
+
+$btn-border-radius: var(--bs-radius) !default;
+$btn-border-radius-sm: var(--bs-radius) !default;
+
+$btn-box-shadow: none !default;
+$btn-focus-box-shadow: none !default;
+$btn-active-box-shadow: none !default;
+$btn-font-weight: 600 !default;
+$input-btn-border-width: 1px !default;
+$btn-transition: var(--transition) !default;
+
+$input-padding-y: 16px !default;
+$input-padding-x: 16px !default;
+$input-font-family: var(--bs-font) !default;
+$input-font-size: var(--bs-small-font-size) !default;
+$input-font-weight: 500 !default;
+$input-line-height: 1.5 !default;
+
+$input-bg: var(--bs-white) !default;
+$input-disabled-color: var(--bs-white) !default;
+$input-disabled-bg: var(--bs-black) !default;
+$input-disabled-border-color: var(--bs-border-color) !default;
+$input-color: var(--bs-dark) !default;
+$input-border-color: var(--bs-border-color) !default;
+$input-border-width: 1px !default;
+$input-box-shadow: none !default;
+$input-border-radius: var(--bs-radius) !default;
+$input-focus-bg: var(--bs-white) !default;
+$input-focus-border-color: var(--bs-primary) !default;
+$input-focus-color: var(--bs-dark) !default;
+$input-focus-box-shadow: none !default;
+$input-placeholder-color: var(--bs-light) !default;
+$input-plaintext-color: var(--bs-light) !default;
+
+$form-check-input-width: 20px !default;
+$form-check-min-height: 20px !default;
+$form-check-padding-start: 24px !default;
+$form-check-margin-bottom: 0 !default;
+$form-check-label-color: var(--bs-dark) !default;
+$form-check-label-cursor: pointer !default;
+$form-check-transition: var(--bs-transition) !default;
+$form-check-input-bg: var(--bs-white) !default;
+$form-check-input-border: 1px solid var(--bs-border-color) !default;
+$form-check-input-border-radius: 4px !default;
+$form-check-radio-border-radius: 50% !default;
+$form-check-input-checked-color: $white;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -3 6 6'><circle r='2' fill='#{$primary}' stroke='#{$form-check-input-checked-color}' stroke-width='1' /></svg>") !default;
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "2x1": calc(1 / 2 * 100%),
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+);

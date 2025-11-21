@@ -1,0 +1,20 @@
+export default function IconConnectExpertShape3({
+    width = 598,
+    height = 275,
+    className = "",
+    ...props
+}) {
+    return (
+        <svg
+            width={width}
+            height={height}
+            viewBox="0 0 598 275"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className={className}
+            {...props}
+        >
+            <circle opacity="0.05" cx="299" cy="299" r="264" stroke="#0058E6" strokeWidth="70" />
+        </svg>
+    );
+}

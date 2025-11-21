@@ -1,0 +1,25 @@
+.section-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920/960;
+    cursor: pointer;
+    max-height: 90vh;
+
+    .icon-play {
+        background: rgba(var(--bs-black-rgb), 0.5) url('data:image/svg+xml,<svg width="120" height="121" viewBox="0 0 120 121" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.5" width="120" height="120" rx="60" fill="white"/><path d="M78.8171 55.2052C83.061 57.5129 83.061 63.4871 78.8171 65.7948L53.1932 79.729C49.0687 81.972 44 79.0526 44 74.4342L44 46.5658C44 41.9474 49.0687 39.028 53.1932 41.271L78.8171 55.2052Z" fill="%231F3D83"/></svg>') center center no-repeat;
+        background-size: auto;
+        background-size: 64px 64px;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+
+        @include responsive(md) {
+            background-size: 48px 48px;
+        }
+    }
+}

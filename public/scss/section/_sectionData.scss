@@ -1,0 +1,40 @@
+.section-data {
+    .shape-1 {
+        width: 31.145833vw;
+        height: 19.114583vw;
+        min-width: 31.145833vw;
+        position: absolute;
+        top: 0;
+        right: clamp(300px, 28.645833vw, 550px);
+        z-index: 1;
+    }
+
+    .shape-2 {
+        width: 18.958333vw;
+        height: 26.354166vw;
+        min-width: 18.958333vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .shape-3 {
+        width: 31.145833vw;
+        height: 19.53125vw;
+        min-width: 31.145833vw;
+        position: absolute;
+        bottom: 0;
+        right: clamp(280px, 26.927083vw, 517px);
+        z-index: 1;
+    }
+
+    @include responsive(xl) {
+
+        .shape-1,
+        .shape-2,
+        .shape-3 {
+            display: none;
+        }
+    }
+}

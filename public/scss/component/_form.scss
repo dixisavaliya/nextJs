@@ -1,0 +1,100 @@
+/* Form Control
+======================================================*/
+::-webkit-input-placeholder {
+  color: var(--bs-dark) !important;
+  opacity: 0.8 !important;
+}
+
+::-moz-placeholder {
+  color: var(--bs-dark) !important;
+  opacity: 0.8 !important;
+}
+
+:-ms-input-placeholder {
+  color: var(--bs-dark) !important;
+  opacity: 0.8 !important;
+}
+
+:-moz-placeholder {
+  color: var(--bs-dark) !important;
+  opacity: 0.8 !important;
+}
+
+input,
+textarea,
+button,
+select,
+option {
+  font-family: var(--bs-font);
+  outline: none;
+  @extend .transition, .shadow-none;
+  @include prefix(appearance, none);
+}
+
+input[type="number"] {
+  margin: 0;
+  @include prefix(appearance, textfield);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-label {
+  margin-bottom: 8px;
+  @extend .text-sm, .text-dark, .fw-medium;
+}
+
+.form-check-label {
+  @extend .fw-medium, .text-base;
+}
+
+.form-check {
+  @extend .d-flex, .align-items-center, .gap-2;
+
+  .form-check-input {
+    @extend .mt-0;
+  }
+}
+
+.form-control {
+  line-height: 24px;
+  padding: clamp(12px, 0.83333333vw, 15px) 16px;
+}
+
+
+.btn {
+  --bs-btn-padding-x: clamp(20px, 2.08333vw, 40px);
+  --bs-btn-padding-y: clamp(12px, 0.6770833333333333vw, 13px);
+
+  white-space: nowrap;
+
+  @extend .gap-2, .d-inline-flex, .align-items-center;
+
+  svg,
+  img {
+    width: clamp(16px, 1.25vw, 24px);
+    height: clamp(16px, 1.25vw, 24px);
+    flex: 0 0 auto;
+  }
+
+  &.btn-sm {
+    --bs-btn-padding-x: clamp(12px, 0.8333333333333333vw, 16px);
+    --bs-btn-padding-y: clamp(6px, 0.4166666666666667vw, 8px);
+  }
+
+  &.btn-primary {
+    --bs-btn-bg: #2787ad;
+    --bs-btn-border-color: #2787ad;
+    --bs-btn-disabled-bg: #2787ad;
+    --bs-btn-disabled-border-color: #2787ad;
+  }
+
+  &:hover {
+
+    svg,
+    img {
+      @include prefix(transform, rotate(45deg));
+    }
+  }
+}
